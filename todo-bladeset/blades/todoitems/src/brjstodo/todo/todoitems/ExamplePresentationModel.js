@@ -11,7 +11,7 @@ caplin.thirdparty('caplin-br');
     this.items = new NodeList( [ new DisplayField( 'foo' ), new DisplayField( 'bar' ) ] );
 
     // get the event hub
-    this.eventHub = ServiceRegistry.getService( 'br.demo-event-hub' );
+    this.eventHub = ServiceRegistry.getService( 'br.event-hub' );
 
     // register to recieve events
     this.eventHub.channel( 'todo-list' ).on( 'todo-added', this._todoAdded, this );
