@@ -9,7 +9,7 @@ caplin.thirdparty( 'caplin-br' );
   
   function ExamplePresentationModel() {
     this.todoText = new br.presenter.node.Field( '' );
-    this.eventHub = ServiceRegistry.getService( 'br.demo-event-hub' );
+    this.eventHub = ServiceRegistry.getService( 'br.event-hub' );
   };
   br.extend( ExamplePresentationModel, br.presenter.PresentationModel );
   
